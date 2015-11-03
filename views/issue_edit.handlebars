@@ -1,0 +1,17 @@
+<h1>Edit issue</h1>
+
+<form class="" action="/issues/update/{{issue.id}}" method="post">
+    <input type="hidden" name="id" value="{{issue.id}}">
+    <div class="row">
+        <div class="six columns">
+            <label for="heading">Heading</label>
+            <input type="text" name="heading" value = {{issue.heading}}>
+            <label for="description">Description</label>
+            <textarea name="description">{{issue.description}}</textarea>
+        </div>
+    </div>
+    <input class="button-primary" type="submit" value="Submit">
+
+
+
+</form>
