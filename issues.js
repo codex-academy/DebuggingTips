@@ -47,7 +47,6 @@ exports.add = function (req, res) {
 }
 
 exports.delete = function (req, res, next) {
-
     req.getConnection(function(err, connection){
         connection.query("delete from issues where id = ?", req.params.id, function(err, results){
             if (err) return next(err);
