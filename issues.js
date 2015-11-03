@@ -1,3 +1,5 @@
+var logger = require('./log');
+
 exports.all = function (req, res) {
     req.getConnection(function(err, connection){
         connection.query("select * from issues", function(err, results){
