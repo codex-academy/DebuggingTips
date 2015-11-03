@@ -31,6 +31,33 @@ In this session we will look at tips, tricks and techniques for tracking down pr
 * break problem down into components
 * use log files - with various log levels
 
+#Setup
+
+## Create a database
+
+```sql
+CREATE DATABASE debugging_tips;
+CREATE USER debugger@localhost IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON debugging_tips.* TO debugger@localhost;
+FLUSH PRIVILEGES;
+```
+
+## Create tables
+
+```sql
+create table issues (
+  id int not null auto_increment,
+  heading char(100) not null,
+  description text,
+  primary key(id)
+);
+```
+
+## Install the dependencies
+
+Using: `npm install`
+
+Run the application using: `nodemon index.js`
 
  
 
