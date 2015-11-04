@@ -59,6 +59,35 @@ class: center, middle
 * Silent failure?
 ]
 ---
+## Stack trace:
+
+# What is a stacktrace?
+
+```javascript
+
+/Users/andre/Dropbox/projects/codex/DebuggingTips/node_modules/express/lib/router/route.js:196
+        throw new Error(msg);
+              ^
+Error: Route.get() requires callback functions but got a [object Undefined]
+    at Route.(anonymous function) [as get] (/Users/andre/Dropbox/projects/codex/DebuggingTips/node_modules/express/lib/router/route.js:196:15)
+    at EventEmitter.app.(anonymous function) (/Users/andre/Dropbox/projects/codex/DebuggingTips/node_modules/express/lib/application.js:481:19)
+    at Object.<anonymous> (/Users/andre/Dropbox/projects/codex/DebuggingTips/index.js:40:5)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+
+
+```
+---
+.right-column[
+    ## Silent failure?
+]
+
+---
 
 .right-column[
 
