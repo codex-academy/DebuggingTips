@@ -59,4 +59,8 @@ create table issues (
 
 Using: `npm install`
 
+## Tools for break points
 
+  [Node Inspector](https://github.com/node-inspector/node-inspector)
+
+  [Using MS Visual Code](http://stackoverflow.com/questions/30023736/mocha-breakpoints-using-visual-studio-code)

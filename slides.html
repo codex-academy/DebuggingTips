@@ -13,6 +13,13 @@
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
+
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 1em;
+      }
+
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
   </head>
@@ -24,6 +31,7 @@ class: center, middle
 # Debugging Tips
 
 ---
+.right-column[
 
 # Agenda
 
@@ -31,10 +39,52 @@ class: center, middle
 * Analyzing stack traces
 * Isolating an issue
 * Debugging tools
+]
+---
+.right-column[
 
+## How to track down errors:
+* Understanding the big picture
+* What areas in the application are error prone
+* What clues do we have?
+* How to read error messages
+]
+---
+.right-column[
+
+## Analyzing stack traces:
+* Which code is yours?
+* At which line is the error?
+* Why could things go wrong at that line?
+* Silent failure?
+]
 ---
 
-# Introduction
+.right-column[
+
+
+## Isolating an issue:
+* Remove code - check if it still fails
+* Put code back until the error happens again
+* Look at lines before & after the problem
+]
+
+---
+.right-column[
+
+## Debugging tools
+* break points
+    * Chrome developer tools
+    * VS Code
+    * Node Inspector
+]
+---
+.right-column[
+## Logging
+* print things to the console.
+* break problem down into components
+* use log files - with various log levels
+]
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
